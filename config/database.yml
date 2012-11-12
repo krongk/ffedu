@@ -1,0 +1,39 @@
+base: &base
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  host: 127.0.0.1
+  port: 3303
+  username: root
+  password: kenrome001
+
+development:
+  <<: *base
+  database: inruby
+
+test:
+  <<: *base
+  database: inruby
+
+production:
+  <<: *base
+  database: inruby
+############################
+remote: &remote
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  pool: 5
+  username: root
+  password: kenrome001
+  host: 127.0.0.1
+  port: 3303
+#for exporter
+common_development:
+  <<: *remote
+  database: inruby
+
+local_development:
+  <<: *base
+  database: forager

@@ -1,0 +1,63 @@
+<% if is_mobile_agent? %>
+  <ul class="nav">
+    <li><a <%= current_class 'home index'%> href="/" title="home"><span>首页</span></a></li>
+    <li><a <%= current_class 'about'%> href="/about" title="about"><span>关于我们</span></a></li>
+    <li><a <%= current_class 'product'%> href="/product_items" title="project"><span>项目案例</span></a></li>
+    <li><a <%= current_class 'contact'%> href="/contact" title="contact"><span>联系我们</span></a></li>
+    <li><a <%= current_class 'sitemap'%> href="/sitemap" title="home"><span>网站地图</span></a></li>
+  </ul>
+<% else %> 
+  <!-- header -->
+  <div id="header">
+    <div class="container">
+  <!-- .logo -->
+      <div class="logo">
+        <a href="/"><img src="/assets/logo.gif"/></a>
+      </div>
+  <!-- /.logo -->
+      <form action="/search" id="search-form">
+        <fieldset>
+          <input type="text" class="text search_txt" name="q" id="q" placeholder="成都 Ruby on Rails"/><input type="submit" value="搜索" class="submit" />
+        </fieldset>
+      </form>
+  <!-- .nav -->
+      <ul class="nav">
+        <li><a <%= current_class 'home index'%> href="/" title="home"><span>首页</span></a></li>
+        <li><a <%= current_class 'about'%> href="/about" title="about"><span>关于我们</span></a></li>
+        <li><a <%= current_class 'product'%> href="/product_items" title="project"><span>项目案例</span></a></li>
+        <li><a <%= current_class 'contact'%> href="/contact" title="contact"><span>联系我们</span></a></li>
+        <li><a <%= current_class 'sitemap'%> href="/sitemap" title="home"><span>网站地图</span></a></li>
+      </ul>
+  <!-- /.nav -->
+  <!-- .extra-box -->
+      <div class="extra-box">
+        <div class="inner">
+          <h2>红宝石信息技术网<span>专业互联网信息化解决方案</span></h2>
+          <ul>
+            <li><a href="/news_items/1">中小企业网站建设</a></li>
+            <li><a href="/news_items/10">多媒体网页设计制作</a></li>
+            <li><a href="/pages/data">网络数据采集、分析</a></li>
+            <li><a href="/news_cates/3">企业信息化方案策划</a></li>
+            <li><a href="/pages/seo">在网上宣传您的网站</a></li>
+            <li><a href="/pages/software">软件外包、定制开发</a></li>
+            <li><a href="/pages/E-commerce">电子商务</a></li>
+          </ul>
+          <div class="wrapper"><a href="/pages/service_more" class="link1"><em><b>更多服务</b></em></a></div>
+        </div>
+      </div>
+    <!-- /.extra-box -->
+  <!-- .intro-text -->
+      <div class="intro-text">
+        <div id='slideshow1'>
+          <%=image_tag asset_path("slider1.png")%>
+          <%=image_tag asset_path("slider2.png")%>
+          <%=image_tag asset_path("slider3.png")%>
+          <%=image_tag asset_path("slider4.png")%>
+          <%=image_tag asset_path("slider5.png")%>
+          <%#=image_tag asset_path("slide_b_03.jpg"), :width=>"250px"%>
+        </div>
+      </div>
+  <!-- /.intro-text -->
+    </div>
+  </div>
+<% end %>
