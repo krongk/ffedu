@@ -1,37 +1,27 @@
-<div class="indent">
-  <h3>信息分类</h3>
-  <ul class="list1">
-    <% NewsCate.recent(10).each do |item| %>
-      <li><%=link_to item.name, news_cate_path(item), :title => item.name %></li>
-    <% end %>
-    <% ProjectCate.all.each do |item| %>
-      <li><%=link_to item.name, project_cate_path(item), :title => item.name %></li>
-    <% end %>
+<div id="loginPan">
+  <h2>189 8003 <span>9770</span></h2>
+  <!-- <form action="" method="post">
+  <label>Email Id</label><input name="email" type="text" id="email" />
+  <label>Password</label><input name="pass" type="password" id="pass" />
+  <input name="Input" type="submit" class="button" value="Login" />
+  </form> -->
+  <ul>
+    <li class="nonregister">家长Q群：86682241</li>
+    <li class="register"><a href="#">咨询QQ: 317099675</a> </li>
   </ul>
 </div>
-<% unless is_mobile_agent? %>
-  <!-- .box -->
-  <div class="box">
-    <h3>会员登录</h3>
-    <form action="/admin" id="login-form">
-      <fieldset>
-        <div class="field"><label for="text">登录名（Username）:</label><input type="text" class="text" name="text"/></div>
-        <div class="field"><label for="text">密码（Password）:</label><input type="password" class="password" name="text"/></div>
-        <div class="wrapper">
-          <input type="submit" value="登 录" class="submit fleft" />
-          <div class="fright"><input type="checkbox" name="checkbox" id="checkbox" /><label for="checkbox">记住状态</label></div>
-        </div>
-      </fieldset>
-    </form>
+<div id="loginBottomPan">&nbsp;</div>
+
+<p class="hours"><a href="#">24/7 hours</a></p>
+
+<div id="servicesPan">&nbsp;</div>
+
+  <div id="servicesBodyPan">
+  <p class="services">Services</p>
+  <p class="boldbrowntext">Morbi sodales ante a mauris. Vestibuc netmomaurisle </p>
+  <p>quamsectetuer mauris et quam.odio loremsto, molestie ut, laoreet vitae, luctus vitae, nisi. Cur abitur nibh justo, tincidunt nec, tempor eget te, tincidunt amet, libero</p>
+  <p class="bluetext">&quot;risus et orci. In sit amet purus ac maurisege egestas pharetra. Vivamus nibh. Vestibulum congue.&quot;</p>
+  <p class="largebrowntext">tincidunt amet libero</p>
+  <p class="link"><a href="#">click here to know more</a></p> 
   </div>
-  <!-- /.box -->
-  <div class="box">
-    <h3>Inruby@搜索</h3>
-    <form action="/search" id="login-form">
-      <fieldset>
-        <div class="field"><input type="text" class="text" name="q" id="q" />
-        <input type="submit" value="搜索" class="submit fleft"/></div>
-      </fieldset>
-    </form>
-  </div>
-<% end %>
+<div id="servicesBottomPan">&nbsp;</div>

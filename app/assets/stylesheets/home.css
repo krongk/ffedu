@@ -1,0 +1,81 @@
+#toprightPan{width:417px; height:76px; background:url(/assets/rightsidebg.jpg) 0 0 no-repeat; position:absolute; top:13px; right:0px;}
+
+.transparent {  
+      filter:alpha(opacity=80);  
+      -moz-opacity:0.8;  
+      -khtml-opacity: 0.8;  
+      opacity: 0.8; 
+	  text-align: center;
+	  valign: middle;
+	  font-size: 16px;
+} 
+.Ucontainer {
+	width: 980px;
+	margin: 0 auto;
+}
+.Ucontainer .row1 {
+	background-color: #960;
+	float: left;
+	height: 382px;
+	width: 290px;
+	margin: 2px;
+	padding: 0px;
+}
+.Ucontainer .row2 {
+	background-color: #930;
+	float: left;
+	height: 190px;
+	width: 190px;
+	margin: 2px;
+	padding: 0px;
+}
+.Ucontainer .row3 {
+	background-color: #030;
+	float: left;
+	height: 190px;
+	width: 290px;
+	margin: 2px;
+	padding: 0px;
+	
+}
+.Ucontainer .row4 {
+	background-color: #aabbff;
+	float: left;
+	width: 93px;
+	height: 190px;
+	margin: 2px;
+	padding: 0px;
+}
+.Ucontainer .row5{
+	background-color: #333;
+	float: left;
+	width: 290px;
+	height: 290px;
+	margin: 2px;
+	padding: 0px;
+}
+.Ucontainer .row6{
+	background-color: #330;
+	float: left;
+	width: 480px;
+	height: 190px;
+	margin: 2px;
+	padding: 0px;
+}
+.Ucontainer .row7{
+	background-color: #eecc88;
+	float: left;
+	width: 380px;
+	height: 290px;
+	margin: 2px;
+	padding: 0px;
+}
+.Ucontainer .row8{
+	background-color: #FFbb33;
+	float: left;
+	width: 290px;
+	height: 290px;
+	margin: 2px;
+	padding: 0px;
+
+}

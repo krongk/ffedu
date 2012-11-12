@@ -11,6 +11,9 @@
   <meta name="description" content="<%= yield(:meta_description)%>" />
     
   <%= stylesheet_link_tag    "application" %>
+  <% if request['controller'] == 'home' %>
+    <%= stylesheet_link_tag    "home" %>
+  <% end %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <script type="text/javascript">
@@ -33,13 +36,17 @@
 <body screen_capture_injected="true">
   <%=render :partial => "layouts/header" %>
   <div id="bodyPan">
-    <div id="bodyleftPan">
+    <% if request['controller'] == 'home' %>
       <%= yield %>
-    </div>
-    <div id="bodyrightPan">
-      <%=render :partial => "layouts/aside" %>
-      <%= yield :aside %>
-    </div>
+    <% else %>
+      <div id="bodyleftPan">
+        <%= yield %>
+      </div>
+      <div id="bodyrightPan">
+        <%=render :partial => "layouts/aside" %>
+        <%= yield :aside %>
+      </div>
+    <% end %>
   </div>
   <%=render :partial => "layouts/footer" %>
 </body>
