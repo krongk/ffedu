@@ -4,21 +4,21 @@ base: &base
   reconnect: false
   pool: 5
   host: 127.0.0.1
-  port: 3303
+  port: 3306
   username: root
   password: kenrome001
 
 development:
   <<: *base
-  database: inruby
+  database: ffedu
 
 test:
   <<: *base
-  database: inruby
+  database: ffedu
 
 production:
   <<: *base
-  database: inruby
+  database: ffedu
 ############################
 remote: &remote
   adapter: mysql2
@@ -32,7 +32,7 @@ remote: &remote
 #for exporter
 common_development:
   <<: *remote
-  database: inruby
+  database: ffedu
 
 local_development:
   <<: *base

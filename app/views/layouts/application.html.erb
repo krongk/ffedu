@@ -20,7 +20,7 @@
       // });
 
       //slide show 
-      $('#slideshow1').sliders({ delay: 4500, speed: 800 });
+      //$('#slideshow1').sliders({ delay: 4500, speed: 800 });
       // $('#slideshow2').sliders({ delay: 4500, speed: 500,ease: 'swing' });
     });
   </script>
@@ -28,36 +28,17 @@
     <link href="/assets/ie_style.css" rel="stylesheet" type="text/css" />
   <![endif]-->
 
-  <%#
-   #highlight code lib: https://github.com/isagalaev/highlight.js
-   #download file from: http://softwaremaniacs.org/soft/highlight/en/download/
-   %>
-  <% if request['controller'] == 'news_items' %>
-    <link rel="stylesheet" href="/highlight.js/solarized_light.min.css">
-    <script src="/highlight.js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  <% end %>
-  <%#highlight code end %>
 </head> 
- 
-<body id="page1">
+
+<body screen_capture_injected="true">
   <%=render :partial => "layouts/header" %>
-  <div id="content">
-    <div class="container">
-      <div class="wrapper">
-        <div class="aside">
-          <% unless is_mobile_agent? %>
-            <%=render :partial => "layouts/aside" %>
-          <% end %>
-           <%= yield :aside %>
-        </div>
-        <div class="mainContent">
-          <%=yield %>
-          <% if is_mobile_agent? %>
-           <%=render :partial => "layouts/aside" %>
-          <% end %>
-        </div>
-      </div>
+  <div id="bodyPan">
+    <div id="bodyleftPan">
+      <%= yield %>
+    </div>
+    <div id="bodyrightPan">
+      <%=render :partial => "layouts/aside" %>
+      <%= yield :aside %>
     </div>
   </div>
   <%=render :partial => "layouts/footer" %>
