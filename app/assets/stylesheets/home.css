@@ -1,10 +1,10 @@
 #toprightPan{width:417px; height:76px; background:url(/assets/rightsidebg.jpg) 0 0 no-repeat; position:absolute; top:13px; right:0px;}
 
 .transparent {  
-      filter:alpha(opacity=80);  
-      -moz-opacity:0.8;  
-      -khtml-opacity: 0.8;  
-      opacity: 0.8; 
+      filter:alpha(opacity= 0.5);  
+      -moz-opacity: 0.5;  
+      -khtml-opacity: 0.5;  
+      opacity: 0.5; 
 	  text-align: center;
 	  valign: middle;
 	  font-size: 16px;
@@ -22,12 +22,17 @@
 	padding: 0px;
 }
 .Ucontainer .row2 {
-	background-color: #930;
+	background-color: #EEE;
 	float: left;
 	height: 190px;
 	width: 190px;
 	margin: 2px;
 	padding: 0px;
+}
+#slider_teacher_1, #slider_teacher_2{
+	float: left;
+	width: 190px;
+	height: 190px;
 }
 .Ucontainer .row3 {
 	background-color: #030;

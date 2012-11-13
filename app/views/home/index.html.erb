@@ -5,10 +5,14 @@
 
 <div class="Ucontainer">
 	<div class="row1 transparent">A-1: 290*382</div>
-	<div class="row2 transparent">B-2: 190*190</div>
+	<div class="row2 transparent">
+	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_1'} %>
+	</div>
 	<div class="row2 transparent">C-2: 190*190</div>
 	<div class="row3 transparent" style="width: 286px;">D-3: 286*190</div>
-	<div class="row2 transparent">E190*190</div>
+	<div class="row2 transparent">
+	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_2'} %>
+	</div>
 	<div class="row2 transparent">F190*190</div>
 	<div class="row4 transparent">G93*190</div>
 	<div class="row2 transparent" style="width: 189px;">H190*190</div>
