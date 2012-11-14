@@ -4,25 +4,43 @@
 
 
 <div class="Ucontainer">
-	<div class="row1 transparent">A-1: 290*382</div>
-	<div class="row2 transparent">
-	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_1'} %>
+	<div class="row1 transparent">
+	  <div class="Ucontent">
+	    A-1: 290*382
+	  </div>
 	</div>
-	<div class="row2 transparent">C-2: 190*190</div>
-	<div class="row3 transparent" style="width: 286px;">D-3: 286*190</div>
 	<div class="row2 transparent">
-	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_2'} %>
+	  <%#=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_3', :arr => [3,4,5,1,2]} %>
+	</div>
+	<div class="row2 transparent">
+	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_1', :arr => [1,2,3,4,5]} %>
+	</div>
+	<div class="row3 transparent" style="width: 286px;">
+	  <p>
+	  <br/><br/><br/>
+	  <%= link_to image_tag(asset_path('online_jianzhang.png')), '#' %><br/><br/>
+	  <%= link_to image_tag(asset_path('online_baoming.png')), '#' %> 
+	  </p>
+	</div>
+	<div class="row2 transparent">
+	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_2', :arr => [2,3,4,5,1]} %>
 	</div>
 	<div class="row2 transparent">F190*190</div>
 	<div class="row4 transparent">G93*190</div>
-	<div class="row2 transparent" style="width: 189px;">H190*190</div>
+	<div class="row2 transparent" style="width: 189px;">
+	  d
+	</div>
 	<DIV style="float: left; width: 290px; height: 480px; margin: 0 4px 4px 0;">
 	  <div class="row5 transparent">I290*290</div>
 	  <div class="row3 transparent">L290*190</div>
 	</DIV>
-	<div class="row2 transparent">J190*190</div>
+	<div class="row2 transparent">
+	 
+	</div>
 	 <div class="row6 transparent">K480*190</div>
-	<div class="row7 transparent">M380*290</div>
+	<div class="row7 transparent">
+	  <%= image_tag asset_path("M.jpg") %>
+	</div>
 	<div class="row5 transparent">N-5: 290*290</div>
 	<div class="row2 transparent">O190*190</div>
 	<div class="row2 transparent">P190*190</div>

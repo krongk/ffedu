@@ -1,10 +1,10 @@
-#toprightPan{width:417px; height:76px; background:url(/assets/rightsidebg.jpg) 0 0 no-repeat; position:absolute; top:13px; right:0px;}
+#toprightPan{ background:url(/assets/rightsidebg2.jpg) 0 0 no-repeat;}
 
 .transparent {  
-      filter:alpha(opacity= 0.5);  
+/*      filter:alpha(opacity= 0.5);  
       -moz-opacity: 0.5;  
       -khtml-opacity: 0.5;  
-      opacity: 0.5; 
+      opacity: 0.5; */
 	  text-align: center;
 	  valign: middle;
 	  font-size: 16px;
@@ -13,8 +13,10 @@
 	width: 980px;
 	margin: 0 auto;
 }
+.Ucontent{
+}
 .Ucontainer .row1 {
-	background-color: #960;
+	background: url(/assets/A222.jpg) #f4e9ca;
 	float: left;
 	height: 382px;
 	width: 290px;
@@ -22,20 +24,15 @@
 	padding: 0px;
 }
 .Ucontainer .row2 {
-	background-color: #EEE;
+	background-color: #99cccc;
 	float: left;
 	height: 190px;
 	width: 190px;
 	margin: 2px;
 	padding: 0px;
 }
-#slider_teacher_1, #slider_teacher_2{
-	float: left;
-	width: 190px;
-	height: 190px;
-}
 .Ucontainer .row3 {
-	background-color: #030;
+	background: url(/assets/D.jpg) #99ff99;
 	float: left;
 	height: 190px;
 	width: 290px;
@@ -44,7 +41,7 @@
 	
 }
 .Ucontainer .row4 {
-	background-color: #aabbff;
+	background-color: #0066cc;
 	float: left;
 	width: 93px;
 	height: 190px;
@@ -52,7 +49,8 @@
 	padding: 0px;
 }
 .Ucontainer .row5{
-	background-color: #333;
+	background: url(/assets/N.jpg) #0096e2;
+	/*background-color: #79f679;*/
 	float: left;
 	width: 290px;
 	height: 290px;
@@ -60,7 +58,7 @@
 	padding: 0px;
 }
 .Ucontainer .row6{
-	background-color: #330;
+	background: url(/assets/K.jpg) #0096e2;
 	float: left;
 	width: 480px;
 	height: 190px;
@@ -76,11 +74,15 @@
 	padding: 0px;
 }
 .Ucontainer .row8{
-	background-color: #FFbb33;
+	background: url(/assets/V.jpg) #0099ff;
 	float: left;
 	width: 290px;
 	height: 290px;
 	margin: 2px;
 	padding: 0px;
-
+}
+#slider_teacher_1, #slider_teacher_2{
+	float: left;
+	width: 190px;
+	height: 190px;
 }
