@@ -40,26 +40,52 @@
         timeout: 8000,
         delay: 2000 
       });
-    
-      $('#slider_teacher_3').cycle({
-        fx:      'custom', 
-        sync: 0, 
-        cssBefore: {  
-            top:  0, 
-            left: 232, 
-            display: 'block' 
-        }, 
-        animIn:  { 
-            left: 0 
-        }, 
-        animOut: {  
-            top: 232 
-        },
-        height: 190,
-        width: 190,
-        slideResize: 1,
-        delay: -1000 
+
+      $('#slider_student_1').cycle({
+        fx: 'scrollDown',
+        sync:  0,
+        speed: 500,
+        timeout: 8000,
+        delay: 3000 
       });
+      $('#slider_student_2').cycle({
+        fx: 'scrollDown',
+        sync:  0,
+        speed: 500,
+        timeout: 8000,
+        delay: 3000 
+      });
+      $('#slider_student_3').cycle({
+        fx: 'scrollDown',
+        sync:  0,
+        speed: 500,
+        timeout: 5000,
+        delay: 1000 
+      });
+
+
+      $('#slider_zuopin_1').cycle({
+        fx: 'fade', 
+        sync:  0,
+        speed: 500,
+        timeout: 6000,
+        delay: -500 
+      });
+      $('#slider_zuopin_2').cycle({
+        fx: 'fade', 
+        sync:  0,
+        speed: 500,
+        timeout: 6000,
+        delay: 1000 
+      });
+      $('#slider_zuopin_3').cycle({
+        fx: 'scrollDown', 
+        sync:  0,
+        speed: 500,
+        timeout: 6000,
+        delay: 2000 
+      });
+    
 
     });
   </script>

@@ -1,6 +1,6 @@
-<% title ["红宝石网，您身边的企业信息化解决专家"].join(' - ') %>
-<% meta_keywords ["成都红宝石企业信息化策划专家"].join(' - ') %>
-<% meta_description ["成都红宝石企业网站建设专家，开发团队具有多年互联网从业经验，团队为企业提供策划、开发、推广、运维一站式服务！联系电话：15928661802"].join(' - ') %>
+<% title ["成都非凡艺术文化培训学校"].join(' - ') %>
+<% meta_keywords ["成都非凡艺术文化培训学校"].join(' - ') %>
+<% meta_description ["成都非凡艺术文化培训学校"].join(' - ') %>
 
 
 <div class="Ucontainer">
@@ -10,7 +10,7 @@
 	  </div>
 	</div>
 	<div class="row2 transparent">
-	  <%#=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_3', :arr => [3,4,5,1,2]} %>
+	  <%= image_tag asset_path("home/e190x190.jpg") %>
 	</div>
 	<div class="row2 transparent">
 	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_1', :arr => [1,2,3,4,5]} %>
@@ -25,29 +25,44 @@
 	<div class="row2 transparent">
 	  <%=render :partial => 'layouts/slider_teachers', :locals => {:css => 'slider_teacher_2', :arr => [2,3,4,5,1]} %>
 	</div>
-	<div class="row2 transparent">F190*190</div>
-	<div class="row4 transparent">G93*190</div>
+	<div class="row2 transparent">
+		<%= image_tag asset_path("home/f190x190.jpg") %>
+	</div>
+	<div class="row4 transparent">
+		<%= image_tag asset_path("home/g93x190.jpg") %>
+	</div>
 	<div class="row2 transparent" style="width: 189px;">
-	  d
+	  <%= image_tag asset_path("home/h190x190.jpg") %>
 	</div>
 	<DIV style="float: left; width: 290px; height: 480px; margin: 0 4px 4px 0;">
-	  <div class="row5 transparent">I290*290</div>
-	  <div class="row3 transparent">L290*190</div>
+	  <div class="row5 transparent">
+	  	<%#=render :partial => 'layouts/slider_zuopin', :locals => {:css => 'slider_zuopin_1', :arr => [1,2,3,4,5]} %>
+	  	<div style="background: #333;">
+	  		<p>学员作品展</p>
+	  	</div>
+	  </div>
+	  <div class="row3 transparent"><%= image_tag asset_path("home/L290x190.jpg") %></div>
 	</DIV>
 	<div class="row2 transparent">
-	 
+	 <%= image_tag asset_path("home/c-2 190x190.jpg") %>
 	</div>
-	 <div class="row6 transparent">K480*190</div>
+	<div class="row6 transparent">
+	 <%= image_tag asset_path("home/k480x190.jpg") %>
+	</div>
 	<div class="row7 transparent">
-	  <%= image_tag asset_path("M.jpg") %>
+	  <%= image_tag asset_path("home/M.jpg") %>
 	</div>
-	<div class="row5 transparent">N-5: 290*290</div>
-	<div class="row2 transparent">O190*190</div>
-	<div class="row2 transparent">P190*190</div>
-	<div class="row5 transparent" style="width: 286px;">Q-5: 286*290</div>
-	<div class="row3 transparent">R290*190</div>
-	<div class="row7 transparent" style="margin-top: -98px; width: 384px;">S-7: 384*290</div>
-	<div class="row2 transparent">T190*190</div>
-	<div class="row4 transparent" style="width: 92px;">G-4: 92*190</div>
-	<div class="row8 transparent" style="margin-top: -98px;">V290*290</div>
+	<div class="row5 transparent">
+		<%=render :partial => 'layouts/slider_zuopin', :locals => {:css => 'slider_zuopin_2', :arr => [2,3,4,5,1]} %>
+	</div>
+	<div class="row2 transparent"><%=render :partial => 'layouts/slider_students', :locals => {:css => 'slider_student_1', :arr => [1,2,3,4,5]} %></div>
+	<div class="row2 transparent"><%=render :partial => 'layouts/slider_students', :locals => {:css => 'slider_student_2', :arr => [2,3,4,5,1]} %></div>
+	<div class="row5 transparent" style="width: 286px;"><%= image_tag asset_path("home/Q286x290.jpg")%></div>
+	<div class="row3 transparent"><%= image_tag asset_path("home/R290x190.jpg") %></div>
+	<div class="row7 transparent" style="margin-top: -98px; width: 384px;">		<%= image_tag asset_path("home/S384x290.jpg"), :width => 384 %>	</div>
+	<div class="row2 transparent"><%=render :partial => 'layouts/slider_students', :locals => {:css => 'slider_student_3', :arr => [6,7,8,9,10]} %></div>
+	<div class="row4 transparent" style="width: 92px;">
+		<%= image_tag asset_path("home/g-4 92x190.jpg"), :width => 92 %>
+	</div>
+	<div class="row8 transparent" style="margin-top: -98px;"><%=render :partial => 'layouts/slider_zuopin', :locals => {:css => 'slider_zuopin_3', :arr => [3,4,5,1,2]} %></div>
 </div>

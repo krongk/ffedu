@@ -2,10 +2,10 @@ $(document).ready(function() {
   //load_editors();
 
   //tinymce-jquery 方式
-  // $('textarea').tinymce({
-  //   theme: 'advanced',
-  //   language : "zh-cn"
-  // });
+  $('textarea').tinymce({
+    theme: 'advanced',
+    language : "zh-cn"
+  });
 });
 
 //no jquery 方式
