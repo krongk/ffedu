@@ -6,3 +6,13 @@
  *= require_self
  *= require style
 */
+
+/*************table*******/
+table { width: auto; border-collapse:collapse; margin-bottom: 0.5em; }
+table.full { width: 100%; }
+table.fixed { table-layout:fixed }
+
+th,td { padding: 0.5em; }
+thead th { background: #444; color: #fff }
+tbody th { background: #ccc; color: #333 }
+tbody th.sub { background: #ddd; color: #333 }

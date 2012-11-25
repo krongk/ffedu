@@ -47,9 +47,9 @@ a:hover{color:#fff; text-decoration:underline;}
 #bodyleftPan p.browntext{background:#fff; color:#705D20; font-size:24px; padding:10px 0 0;}
 
 #bodyleftPan ul{width:270px; height:24px; margin:20px 0 0;}
-#bodyleftPan ul li{width:118px; height:24px; float:left; margin:0 5px 0 0;}
-#bodyleftPan ul li.more{width:118px; height:24px; float:left;}
-#bodyleftPan ul li a{width:90px; height:24px; display:block; background:url(/assets/reedmore-bg.gif) 0 0 no-repeat #FEFEFE; color:#fff; font-size:13px; font-weight:bold; line-height:20px; padding:0 0 0 28px}
+#bodyleftPan ul li{width:188px; height:24px; float:left; margin:0 5px 0 0;}
+#bodyleftPan ul li.more{width:188px; height:24px; float:left;}
+#bodyleftPan ul li a{width:160px; height:24px; display:block; background:url(/assets/reedmore-bg.gif) 0 0 no-repeat #FEFEFE; color:#fff; font-size:13px; font-weight:bold; line-height:20px; padding:0 0 0 28px}
 #bodyleftPan ul li a:hover{background:url(/assets/reedmore-hover.gif) 0 0 no-repeat; text-decoration:none;}
 
 #bodyleftPan ul li.comment{width:98px; height:24px; background:url(/assets/commentbg.gif) 0 0 no-repeat #FEFEFE; color:#fff; font-size:13px; font-weight:bold; line-height:24px; text-decoration:none; float:left; padding:0 0 0 20px}
@@ -117,3 +117,11 @@ a:hover{color:#fff; text-decoration:underline;}
 
 #footerPan p.copyright{width:auto; background: url(/assets/copyrightbg.gif) 0 0 repeat-x #705D20; color:#fff; position:absolute; top:23px; left:10px;}
 
+/************customer******************/
+#recent_news a{
+	line-height: 25px;
+	color: #333;
+}
+.titlerb h1{
+	line-height: 30px;
+}

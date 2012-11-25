@@ -6,7 +6,12 @@
 <div class="Ucontainer">
 	<div class="row1 transparent">
 	  <div class="Ucontent">
-	    A-1: 290*382
+	    <p><b>非凡文化艺术学校</b>开办至今已经10年，我们一起经历了孩子们从涂鸦到写实，从无意识的想象到有创意的表达对生活的感悟，经历了在成都市公园、在各大学校园等用画笔写生捕捉城市的沧桑与变迁，经历了各种激动地领奖场面与成功后的喜悦。</p><br/>
+	    <ul>
+	    <li><%= image_tag asset_path("arrow2.gif") %>&nbsp;&nbsp;在2011年5月四川省地球环境杯比赛中，金奖8人，银奖、铜奖29人；</li>
+	    <li><%= image_tag asset_path("arrow2.gif") %>&nbsp;&nbsp;在2011年5月香港艺术节比赛中，黎上琳，林志朋等同学获四川赛区一等奖，王云豪获二等奖，</li>
+	    <li><%= image_tag asset_path("arrow2.gif") %>&nbsp;&nbsp;在2012年5月成都市第十届优秀艺术人才选拔赛29人中，荣获19个一等奖，6个二等奖，3个三等奖，这19个一等奖的同学在数万名选手中脱颖而出，他们将录入成都市优秀艺术人才库。</li>
+	    </ul>
 	  </div>
 	</div>
 	<div class="row2 transparent">
@@ -37,8 +42,15 @@
 	<DIV style="float: left; width: 290px; height: 480px; margin: 0 4px 4px 0;">
 	  <div class="row5 transparent">
 	  	<%#=render :partial => 'layouts/slider_zuopin', :locals => {:css => 'slider_zuopin_1', :arr => [1,2,3,4,5]} %>
-	  	<div style="background: #333;">
-	  		<p>学员作品展</p>
+	  	<div style="background: #333; padding: 4px">
+	  		<p>教 学 动 态</p>
+	  	</div>
+	  	<div class="Ucontent" id="recent_news">
+	  	 <ul>
+	  	 <% NewsItem.recent(10, 3, false).each do |item| %>
+	  	   <li><%= image_tag asset_path("arrow2.gif") %>&nbsp;&nbsp; <%= link_to item.title, news_item_path(item) %></li>
+	  	 <% end %>
+	  	 </ul>
 	  	</div>
 	  </div>
 	  <div class="row3 transparent"><%= image_tag asset_path("home/L290x190.jpg") %></div>
@@ -53,7 +65,17 @@
 	  <%= image_tag asset_path("home/M.jpg") %>
 	</div>
 	<div class="row5 transparent">
-		<%=render :partial => 'layouts/slider_zuopin', :locals => {:css => 'slider_zuopin_2', :arr => [2,3,4,5,1]} %>
+		<%#=render :partial => 'layouts/slider_zuopin', :locals => {:css => 'slider_zuopin_2', :arr => [2,3,4,5,1]} %>
+		<div style="background: #333; padding: 4px;">
+	  		<p>行 业 新 闻</p>
+	  	</div>
+	  	<div class="Ucontent" id="recent_news">
+	  	 <ul>
+	  	 <% NewsItem.recent(10, 4, false).each do |item| %>
+	  	   <li><%= image_tag asset_path("arrow2.gif") %>&nbsp;&nbsp; <%= link_to item.title, news_item_path(item) %></li>
+	  	 <% end %>
+	  	 </ul>
+	  	</div>
 	</div>
 	<div class="row2 transparent"><%=render :partial => 'layouts/slider_students', :locals => {:css => 'slider_student_1', :arr => [1,2,3,4,5]} %></div>
 	<div class="row2 transparent"><%=render :partial => 'layouts/slider_students', :locals => {:css => 'slider_student_2', :arr => [2,3,4,5,1]} %></div>

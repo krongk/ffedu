@@ -9,13 +9,10 @@ class NewsCatesController < InheritedResources::Base
   end
 
   def show
-    if params[:id] =~ /^\d+$/
-	    @news_items = NewsCate.find(params[:id]).news_items.order("updated_at DESC").paginate(:page => params[:page] || 1)
-    else
-      @news_items = NewsItem.where("tags regexp '#{params[:id]}' OR title regexp '#{params[:id]}'").order("updated_at DESC").paginate(:page => params[:page] || 1)
-    end
-	  @news_cate = NewsCate.find_by_id(params[:id])
+    @news_cate  = NewsCate.find_by_id(params[:id])
+    @news_cate ||= NewsCate.find_by_cate(params[:id])
     @news_cate ||= NewsCate.first
+	  @news_items = @news_cate.news_items.order("updated_at DESC").paginate(:page => params[:page] || 1)
   end
 
   private

@@ -45,13 +45,6 @@ ActiveAdmin.register NewsItem do
         div image_tag(asset_path('HN.jpg'), :width => '220px')
       li "连接文本"
         div "<a title='inruby.com' target='_blank' src=''> </a>"
-      li "嵌入代码"
-        div "<pre><code></code></pre>"
-        div "<pre><code class='ruby'> </code></pre>"
-        div "<pre><code class='no-highlight'> </code></pre>"
-      li "代码常用"
-        div "<>  &lt; &gt;"
-        div image_tag(asset_path('css_eg.png'), :width => '220px')
     end
   end
 
